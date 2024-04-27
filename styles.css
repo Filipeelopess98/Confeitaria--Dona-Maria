@@ -190,8 +190,10 @@ body {
 
 
 .about-img {
-    width: 900px;
-    border-radius: 6px;
+    width: 550px;
+    border-radius: 15px:
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .titule {
