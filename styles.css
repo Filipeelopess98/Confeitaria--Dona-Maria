@@ -192,8 +192,7 @@ body {
 
 .about-img {
     width: 550px;
-    border-radius: 15px:
-    padding-left: 8px;
+    border-radius: 15px: padding-left: 8px;
     padding-right: 8px;
 }
 
@@ -436,8 +435,8 @@ textarea {
     .nav-menu {
         position: fixed;
         right: -100%;
-        width: 101%;
-        height: 101%;
+        width: 100%;
+        height: 100%;
         flex-direction: column;
         background: #56091F;
         color: #ebcca2;
