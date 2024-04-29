@@ -186,6 +186,7 @@ body {
     margin-top: 30px;
     max-width: 1500px;
 
+
 }
 
 
@@ -234,56 +235,24 @@ body {
 .bolo8,
 .bolo9 {
     display: inline-block;
-    width: 270px;
-    height: 450px;
-    margin: 10px;
+    width: 230px;
+    height: 420px;
+    margin: 7px;
     background-color: #56091F;
     color: #ebcca2;
-    border-radius: 20px;
+    border-radius: 25px;
     vertical-align: top;
     text-align: center;
-
+    overflow: hidden;
+    box-shadow: 2px 3px 3px 2px #0e0e0e;
 }
 
-
-.descricao {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    max-width: 280px;
-    margin: 0 auto;
-}
-
-.descricao h5 {
-    color: #ebcca2;
-    font-size: 15px;
-}
-
-.descricao h3 {
-    color: #56091F;
-    background-color: #ebcca2;
-    border-radius: 8px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.descricao p {
-    color: #ebcca2;
-    font-size: 15px;
-    font-weight: 600;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    max-width: 300px;
-}
 
 .img-bolo {
-    width: 240px;
+    width: 230px;
     border-radius: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
-    transition: background-color 0.7s, color 0.7s, transform 0.5s;
+    padding-left: 15px;
+    padding-right: 15px;
     z-index: 3;
     padding-top: 12px;
     text-align: center;
@@ -291,6 +260,47 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+.descricao {
+    flex: 1;
+    overflow: hidden;
+
+}
+
+.descricao h5 {
+    color: #ebcca2;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+.descricao h3 {
+    color: #56091F;
+    background-color: #ebcca2;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px #1f1d1f;
+
+
+}
+
+
+.descricao p {
+    color: #ebcca2;
+    font-size: 13px;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+
 
 
 .fale {
@@ -424,18 +434,16 @@ textarea {
     .nav-menu {
         position: fixed;
         right: -100%;
-        top: 50px;
-        width: 100%;
-        height: 100%;
+        width: 101%;
+        height: 101%;
         flex-direction: column;
         background: #56091F;
         color: #ebcca2;
-        gap: 2px;
+        gap: 3px;
         transition: 0.3s;
-        font-size: 17px;
-        font-weight: 500;
+        font-size: 26px;
+        font-weight: 800;
         cursor: pointer;
-        border-bottom: 2px solid #ebcca2;
 
     }
 
@@ -503,20 +511,22 @@ textarea {
 
 
     .home-text h1 {
-        font-size: 30px;
+        font-size: 28px;
         padding-left: 0;
         padding-right: 0;
         text-align: center;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 20px;
 
     }
 
 
     .home-image img {
-        width: 410px;
+        width: 400px;
+        display: flex;
         margin: 0 auto;
-        margin-top: -33px;
+        margin-top: -19px;
     }
 
     .home-image {
@@ -526,11 +536,9 @@ textarea {
 
     .home-text h2 {
         color: #56091F;
-        margin-top: 3px;
-        font-weight: 800;
-        font-size: 25px;
+        font-weight: 700;
+        font-size: 21px;
         text-align: center;
-        margin-bottom: 39px;
         margin-left: auto;
         margin-right: auto;
         max-width: 90%;
@@ -568,7 +576,7 @@ textarea {
 
     .about {
         background-color: #56091F;
-        height: 1060px;
+        height: 820px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -580,45 +588,45 @@ textarea {
         font-size: 30px;
         font-weight: 700;
         text-align: center;
-        padding-top: 25px;
+
 
     }
 
     .about p {
         color: #ebcca2;
-        font-size: 15px;
-        font-weight: 500;
-        margin-top: 30px;
+        font-size: 13px;
+        font-weight: 400;
         max-width: 1000px;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
 
     }
 
 
     .about-img {
-        width: 500px;
-        border-radius: 10px;
-        padding-left: 25px;
-        padding-right: 25px;
+        width: 395px;
+        border-radius: 10%;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
 
     .bolo {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 10;
+        padding-right: 10px;
         text-align: center;
-        padding-bottom: 95px;
+        padding-bottom: 80px;
         margin-top: 12px;
-        margin-top: 180px;
+        margin-top: 8px;
     }
 
 
     .name-bolos {
         color: #56091F;
         text-align: center;
-        font-size: 42px;
-        margin-top: -28px;
+        font-size: 40px;
+        font-weight: 800;
+
 
 
 
@@ -633,25 +641,26 @@ textarea {
     .bolo7,
     .bolo8,
     .bolo9 {
-        width: calc(50% - 25px);
-        height: 380px;
+        width: calc(53% - 29px);
+        height: 310px;
         margin: 5px;
         background-color: #56091F;
-        border-radius: 20px;
+        border-radius: 11px;
         padding: 10px;
         vertical-align: top;
         text-align: center;
         transition: transform 0.3s ease-in-out;
+        box-shadow: 2px 2px 3px 2px #0e0e0e;
 
     }
 
     .img-bolo {
-        width: 160px;
-        border-radius: 60px;
+        width: 150px;
+        border-radius: 50%;
         padding-left: 10px;
         padding-right: 10px;
         z-index: 3;
-        padding-top: 12px;
+        padding-top: 4px;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -660,7 +669,6 @@ textarea {
 
     .descricao {
         text-align: center;
-        padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 5px;
         padding-right: 5px;
@@ -670,7 +678,10 @@ textarea {
 
     .descricao h5 {
         color: #ebcca2;
-        font-size: 14px;
+        font-size: 17px;
+        padding-left: 5px;
+        padding-right: 5px;
+
     }
 
     .descricao h3 {
@@ -679,23 +690,22 @@ textarea {
         border-radius: 8px;
         margin-top: 5px;
         margin-bottom: 5px;
-        font-size: 15px;
-        font-weight: 600;
+        font-size: 18px;
+        font-weight: 700;
     }
 
     .descricao p {
         color: #ebcca2;
-        font-size: 13px;
-        font-weight: 500;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        font-size: 12px;
+        font-weight: 400;
+        padding-top: 3px;
         max-width: 300px;
     }
 
 
     .fale-conosco {
         max-width: 594px;
-        margin: 58px auto;
+        margin: 1px auto;
         background-color: #ebcca2;
         color: #56091F;
         padding: 32px;
@@ -712,4 +722,10 @@ textarea {
         padding-top: 30px;
 
     }
+
+    .redes-sociais {
+        text-align: center;
+        margin-top: 95px;
+    }
+
 }
