@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,10 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
     <title>Maria Bolos</title>
 </head>
 
@@ -62,10 +66,50 @@
 
             <img class="about-img" src="assets/foto_sobre.jpg" alt="sobre">
         </div>
+
+        <div class="container">
+            <h1>Avaliações de Clientes</h1>
+            <div class="customer-reviews">
+                <div class="review">
+                    <div class="reviewer-info">
+                        <img src="assets/joana.png" alt="Avatar" class="avatar">
+                        <div class="info">
+                            <h3>Joana Silva</h3>
+                            <p>Cliente desde 2022</p>
+                        </div>
+                    </div>
+                    <p class="comment">"Os bolos desta loja são simplesmente incríveis! Eu pedi para o meu aniversário e
+                        todos os convidados adoraram. Recomendo muito!"</p>
+                </div>
+                <div class="review alternate">
+                    <div class="reviewer-info">
+                        <img src="assets/marcos.png" alt="Avatar" class="avatar">
+                        <div class="info">
+                            <h3>Marcos Oliveira</h3>
+                            <p>Cliente desde 2021</p>
+                        </div>
+                    </div>
+                    <p class="comment">"Nunca provei bolos tão deliciosos quanto os dessa loja. Eles sempre chegam
+                        fresquinhos e com uma apresentação impecável. Parabéns pelo trabalho!"</p>
+                </div>
+                <div class="review">
+                    <div class="reviewer-info">
+                        <img src="assets/lucia.png" alt="Avatar" class="avatar">
+                        <div class="info">
+                            <h3>Lúcia Santos</h3>
+                            <p>Cliente desde 2020</p>
+                        </div>
+                    </div>
+                    <p class="comment">"Estou completamente apaixonada pelos bolos da Maria. Eles são feitos com tanto
+                        carinho e dedicação, sempre fresquinhos e deliciosos!"</p>
+                </div>
+            </div>
+        </div>
+
         <div id="bolo" class="bolo">
             <h5 class="name-bolos">Bolos </h5>
             <div class="bolo1">
-                <h5>Limão</h5>
+                <h5 class="sabor">Limão</h5>
                 <img class="img-bolo" src="assets/bolo limão.png" bolo-limao">
                 <div class="descricao">
                     <h3>R$ 49,90</h3>
@@ -75,8 +119,8 @@
 
             </div>
             <div class="bolo2">
-                <h5>Cenoura</h5>
-                <img class="img-bolo" src="assets/bolo cenoura.png" bolo-limao">
+                <h5 class="sabor">Cenoura</h5>
+                <img class="img-bolo" src="assets/bolo-de-cenoura.jpg" bolo-limao">
                 <div class="descricao">
                     <h3>R$ 59,90</h3>
                     <p>Com cobertura incrível feita com chocolate 40%.</p>
@@ -85,7 +129,7 @@
             </div>
 
             <div class="bolo3">
-                <h5>Brigadeiro</h5>
+                <h5 class="sabor">Brigadeiro</h5>
                 <img class="img-bolo" src="assets/bolo brigadeiro.png">
                 <div class="descricao">
                     <h3>R$ 69,90</h3>
@@ -96,8 +140,8 @@
 
             </div>
             <div class="bolo4">
-                <h5>Fubá c/ Goiabada</h5>
-                <img class="img-bolo" src="assets/Bolo-de-fuba-com-goiabada-.jpg" bolo-limao">
+                <h5 class="sabor">Fubá c/ Goiabada</h5>
+                <img class="img-bolo" src="assets/bolo-de-fuba-com-goiabada.jpg" bolo-limao">
                 <div class="descricao">
                     <h3>R$ 49,90</h3>
                     <p>Com goiabada, é uma festa para o paladar. Um
@@ -107,7 +151,7 @@
 
             </div>
             <div class="bolo5">
-                <h5>Formigueiro</h5>
+                <h5 class="sabor">Formigueiro</h5>
                 <img class="img-bolo" src="assets/bolo_formigueiro.jpg" bolo-limao">
                 <div class="descricao">
                     <h3>R$ 32,90</h3>
@@ -116,7 +160,7 @@
                 </div>
             </div>
             <div class="bolo6">
-                <h5>Pão de ló</h5>
+                <h5 class="sabor">Pão de ló</h5>
                 <img class="img-bolo" src="assets/Pão-de-Ló-Caseiro.jpg">
                 <div class="descricao">
                     <h3>R$ 29,90</h3>
@@ -124,8 +168,8 @@
                 </div>
             </div>
             <div class="bolo7">
-                <h5>Fubá</h5>
-                <img class="img-bolo" src="assets/bolo_fuba.jpg">
+                <h5 class="sabor">Fubá</h5>
+                <img class="img-bolo" src="assets/bolo-de-fubá.jpg">
                 <div class="descricao">
                     <h3>R$ 29,90</h3>
                     <p>Ideal para café ou momentos especiais. Uma experiência que
@@ -133,7 +177,7 @@
                 </div>
             </div>
             <div class="bolo8">
-                <h5>Banana</h5>
+                <h5 class="sabor">Banana</h5>
                 <img class="img-bolo" src="assets/bolo-de-banana.jpg">
                 <div class="descricao">
                     <h3>R$ 34,90</h3>
@@ -143,7 +187,7 @@
                 </div>
             </div>
             <div class="bolo9">
-                <h5>Laranja</h5>
+                <h5 class="sabor">Laranja</h5>
                 <img class="img-bolo" src="assets/bolo-de-laranja.jpg">
                 <div class="descricao">
                     <h3>R$ 32,90</h3>
@@ -151,6 +195,7 @@
 
                 </div>
             </div>
+        </div>
         </div>
         <div>
 

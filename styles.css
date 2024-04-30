@@ -17,10 +17,12 @@ body {
     left: 0;
     width: 100%;
     padding: 18px 40px;
-    box-shadow: 0 2px 6px #cca1a1;
+
     background-color: #56091F;
     transition: all 0.5s;
     z-index: 999;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 }
 
 .img logo {
@@ -54,15 +56,16 @@ body {
 
 
 .navigation li:hover {
-    font-weight: 700;
-    border-bottom: 1px solid #ebcca2;
+    font-weight: 600;
+    border-bottom: 2px solid #ebcca2;
     font-size: 17px;
 }
 
 .navigation ul li a {
     color: #56091F;
-    font-size: 20px;
+    font-size: 25px;
     transition: all 0.5s;
+    font-weight: 800;
 
 }
 
@@ -137,6 +140,7 @@ body {
     margin-left: 80px;
     margin-top: 15px;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 
 
 }
@@ -146,6 +150,7 @@ body {
     color: #ebcca2;
     font-weight: 700;
     box-shadow: 1px 1px 2px #1f1d1f;
+
 }
 
 
@@ -191,8 +196,9 @@ body {
 
 
 .about-img {
-    width: 550px;
-    border-radius: 15px: padding-left: 8px;
+    width: 700px;
+    border-radius: 15px;
+    padding-left: 8px;
     padding-right: 8px;
 }
 
@@ -203,9 +209,70 @@ body {
 }
 
 
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.container h1 {
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+    color: #56091F;
+}
+
+.container h3 {
+    color: #ebcca2;
+
+}
+
+
+.customer-reviews {
+    background-color: #56091F;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.review {
+    border-bottom: 1px solid #ebcca2;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info h3 {
+    margin: 0;
+}
+
+.info p {
+    margin: 0;
+    color: #ebcca2;
+    font-weight: 500;
+}
+
+.comment {
+    font-style: italic;
+    color: #ebcca2;
+    line-height: 1.6;
+}
+
 
 .name-bolos {
-    color: #56091F;
+    color: #ebcca2;
     text-align: center;
     font-size: 45px;
     padding-top: 25px;
@@ -221,7 +288,7 @@ body {
     padding-right: 23px;
     margin-top: -7px;
     text-align: center;
-    background-color: #ebcca2;
+    background-color: #56091F;
     text-align: center;
     padding-bottom: 97px;
 }
@@ -237,10 +304,10 @@ body {
 .bolo9 {
     display: inline-block;
     width: 230px;
-    height: 420px;
-    margin: 7px;
-    background-color: #56091F;
-    color: #ebcca2;
+    height: 385px;
+    margin: 10px;
+    color: #56091F;
+    background-color: #ebcca2;
     border-radius: 25px;
     vertical-align: top;
     text-align: center;
@@ -248,21 +315,25 @@ body {
     box-shadow: 2px 3px 3px 2px #0e0e0e;
 }
 
+.sabor {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
 
 .img-bolo {
     width: 230px;
-    border-radius: 60px;
+    border-radius: 50%;
     padding-left: 15px;
     padding-right: 15px;
     z-index: 3;
-    padding-top: 12px;
+    padding-top: 7px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
-
-
 
 
 .descricao {
@@ -272,26 +343,30 @@ body {
 }
 
 .descricao h5 {
-    color: #ebcca2;
-    font-size: 16px;
+    color: #56091F;
+    font-size: 17px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 20px;
 }
 
+
+
+
 .descricao h3 {
-    color: #56091F;
-    background-color: #ebcca2;
+    background-color: #56091F;
+    color: #ebcca2;
     border-radius: 5px;
     text-align: center;
     box-shadow: 2px 2px 2px 2px #1f1d1f;
-
+    margin-top: 10px;
+    font-size: 18px;
 
 }
 
 
 .descricao p {
-    color: #ebcca2;
+    color: #56091F;
     font-size: 13px;
     font-weight: 600;
     padding-top: 15px;
@@ -301,12 +376,9 @@ body {
 }
 
 
-
-
-
 .fale {
     height: 735px;
-    background-color: #56091F;
+    background-color: #ebcca2;
     padding-top: 30px;
 }
 
@@ -315,8 +387,8 @@ body {
 .fale-conosco {
     max-width: 600px;
     margin: 50px auto;
-    background-color: #ebcca2;
-    color: #56091F;
+    color: #ebcca2;
+    background-color: #56091F;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -346,8 +418,8 @@ textarea {
 }
 
 .fale-conosco button[type="submit"] {
-    color: #ebcca2;
-    background-color: #56091F;
+    background-color: #ebcca2;
+    color: #56091F;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -376,7 +448,7 @@ textarea {
 
 
 .redes-sociais h1 {
-    color: #ebcca2;
+    color: #56091F;
     text-align: center;
     padding-top: 15px;
     font-size: 20px;
@@ -622,14 +694,75 @@ textarea {
     }
 
 
-    .name-bolos {
+
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .container h1 {
+        text-align: center;
+        padding: 20px;
+        font-size: 28px;
         color: #56091F;
+    }
+
+    .container h3 {
+        color: #ebcca2;
+
+    }
+
+
+    .customer-reviews {
+        background-color: #56091F;
+        padding: 14px;
+        border-radius: 15px;
+    }
+
+    .review {
+        border-bottom: 1px solid #ebcca2;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .reviewer-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    .info h3 {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .info p {
+        margin: 0;
+        color: #ebcca2;
+        font-weight: 500;
+        font-size: 13px;
+    }
+
+    .comment {
+        font-style: italic;
+        color: #ebcca2;
+        line-height: 1.6;
+        font-size: 13px;
+    }
+
+    .name-bolos {
+        color: #ebcca2;
         text-align: center;
         font-size: 40px;
         font-weight: 800;
-
-
-
 
     }
 
@@ -645,7 +778,7 @@ textarea {
         width: calc(53% - 29px);
         height: 310px;
         margin: 5px;
-        background-color: #56091F;
+        background-color: #ebcca2;
         border-radius: 11px;
         padding: 10px;
         vertical-align: top;
@@ -678,7 +811,7 @@ textarea {
     }
 
     .descricao h5 {
-        color: #ebcca2;
+        color: #56091F;
         font-size: 17px;
         padding-left: 5px;
         padding-right: 5px;
@@ -686,8 +819,8 @@ textarea {
     }
 
     .descricao h3 {
-        background-color: #ebcca2;
-        color: #56091F;
+        background-color: #56091F;
+        color: #ebcca2;
         border-radius: 8px;
         margin-top: 5px;
         margin-bottom: 5px;
@@ -696,7 +829,7 @@ textarea {
     }
 
     .descricao p {
-        color: #ebcca2;
+        color: #56091F;
         font-size: 12px;
         font-weight: 400;
         padding-top: 3px;
@@ -707,8 +840,8 @@ textarea {
     .fale-conosco {
         max-width: 594px;
         margin: 1px auto;
-        background-color: #ebcca2;
-        color: #56091F;
+        color: #ebcca2;
+        background-color: #56091F;
         padding: 32px;
         border-radius: 25px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -719,7 +852,7 @@ textarea {
 
     .fale {
         height: 760px;
-        background-color: #56091F;
+        background-color: #ebcca2;
         padding-top: 30px;
 
     }
