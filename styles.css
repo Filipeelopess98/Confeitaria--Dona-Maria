@@ -13,16 +13,16 @@ body {
 
 .navigation {
     position: fixed;
-    top: 0;
+    top: -2px;
     left: 0;
     width: 100%;
     padding: 18px 40px;
-
     background-color: #56091F;
     transition: all 0.5s;
     z-index: 999;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
+    border-bottom: 2px solid #ebcca2
 }
 
 .img logo {
@@ -62,8 +62,8 @@ body {
 }
 
 .navigation ul li a {
-    color: #56091F;
-    font-size: 25px;
+    color: #ebcca2;
+    font-size: 20px;
     transition: all 0.5s;
     font-weight: 800;
 
@@ -165,12 +165,12 @@ body {
 
 .about {
     background-color: #56091F;
-    height: 1080px;
-    margin-top: 190px;
+    height: 946px;
+    margin-top: 270px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 .about h1 {
@@ -178,7 +178,7 @@ body {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 10px;
-    margin-top: 15px;
+
 
 
 }
@@ -218,8 +218,8 @@ body {
 
 .container h1 {
     text-align: center;
-    padding: 30px;
-    font-size: 40px;
+    padding: 65px;
+    font-size: 38px;
     color: #56091F;
 }
 
@@ -233,6 +233,7 @@ body {
     background-color: #56091F;
     padding: 20px;
     border-radius: 15px;
+    box-shadow: 2px 3px 3px 2px #0e0e0e;
 }
 
 .review {
@@ -240,6 +241,16 @@ body {
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
+
+.review {
+    transition: filter 0.3s ease;
+}
+
+.review:hover {
+    filter: brightness(90%);
+}
+
+
 
 .reviewer-info {
     display: flex;
@@ -271,6 +282,79 @@ body {
 }
 
 
+.rating {
+    margin-top: 10px;
+}
+
+.stars {
+    display: inline-block;
+}
+
+.stars:before {
+    content: "\2605\2605\2605\2605\2605";
+    font-size: 22px;
+    letter-spacing: 5px;
+    background: linear-gradient(90deg, #f39c12 50%, #f39c12 50%, #f39c12 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stars[data-rating="1"]:before {
+    content: "\2605\2606\2606\2606\2606";
+}
+
+.stars[data-rating="2"]:before {
+    content: "\2605\2605\2605\2606\2606";
+}
+
+.stars[data-rating="3"]:before {
+    content: "\2605\2605\2605\2606\2606";
+}
+
+.stars[data-rating="4"]:before {
+    content: "\2605\2605\2605\2605\2606";
+}
+
+.stars[data-rating="5"]:before {
+    content: "\2605\2605\2605\2605\2605";
+}
+
+
+.container {
+    text-align: center;
+}
+
+
+.button-prev-next {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 30px;
+
+
+}
+
+
+
+.prev,
+.next {
+    background-color: #56091F;
+    color: #ebcca2;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.prev:hover,
+.next:hover {
+
+    font-weight: 800;
+}
+
+
+
+
 .name-bolos {
     color: #ebcca2;
     text-align: center;
@@ -290,7 +374,7 @@ body {
     text-align: center;
     background-color: #56091F;
     text-align: center;
-    padding-bottom: 97px;
+    padding-bottom: 60px;
 }
 
 .bolo1,
@@ -397,6 +481,9 @@ body {
 
 .fale-conosco h2 {
     text-align: center;
+    font-size: 19px;
+    padding-bottom: 25px;
+    padding-top: 20px;
 }
 
 .form-group {
@@ -453,6 +540,17 @@ textarea {
     padding-top: 15px;
     font-size: 20px;
 }
+
+.direitos {
+    text-align: center;
+    color: #56091F;
+    font-size: 15px;
+    padding-top: 35px;
+    font-weight: 500;
+
+}
+
+
 
 
 @media (max-width: 785px) {
@@ -649,7 +747,7 @@ textarea {
 
     .about {
         background-color: #56091F;
-        height: 820px;
+        height: 871px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -690,7 +788,7 @@ textarea {
         text-align: center;
         padding-bottom: 80px;
         margin-top: 12px;
-        margin-top: 8px;
+        margin-top: -15px;
     }
 
 
@@ -860,6 +958,16 @@ textarea {
     .redes-sociais {
         text-align: center;
         margin-top: 95px;
+    }
+
+    .direitos {
+        text-align: center;
+        color: #56091F;
+        font-size: 13px;
+        padding-top: 50px;
+        padding-bottom: 25px;
+        font-weight: 500;
+
     }
 
 }

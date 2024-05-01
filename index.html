@@ -22,11 +22,11 @@
     <header>
         <nav class="navigation">
             <ul class="nav-menu">
-                <li class="nav-item">Inicio</li>
-                <li class="nav-item">Sobre</li>
-                <a href="" class="logo">Maria Bolos</a>
-                <li class="nav-item">Produtos</li>
-                <li class="nav-item">Contato</li>
+                <li class="nav-item"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#sobre">Sobre</a></li>
+                <a href="#" class="logo">Maria Bolos</a>
+                <li class="nav-item"><a href="#produtos">Produtos</a></li>
+                <li class="nav-item"><a href="#contato">Contato</a></li>
             </ul>
             <div class="menu">
                 <span class="bar"></span>
@@ -36,7 +36,8 @@
         </nav>
     </header>
     <main>
-        <section>
+
+        <section id="home">
             <div class="home-text">
                 <h1>Bem-Vindo a Maria Bolos</h1>
                 <div class="home-image">
@@ -53,9 +54,9 @@
             </div>
         </section>
         <br>
-        <br>
-        <br>
-        <div class="about">
+
+        <div class="about" id="sobre">
+
             <h1>Conheça um pouco da historia da Dona Maria </h1>
 
             <p>Maria sempre teve um caso de amor com os bolos, uma paixão que cresceu em meio aos aromas tentadores que
@@ -68,7 +69,7 @@
         </div>
 
         <div class="container">
-            <h1>Avaliações de Clientes</h1>
+            <h1>Experiências Inesquecíveis dos Nossos Clientes</h1>
             <div class="customer-reviews">
                 <div class="review">
                     <div class="reviewer-info">
@@ -80,6 +81,9 @@
                     </div>
                     <p class="comment">"Os bolos desta loja são simplesmente incríveis! Eu pedi para o meu aniversário e
                         todos os convidados adoraram. Recomendo muito!"</p>
+                    <div class="rating">
+                        <div class="stars" data-rating="5"></div>
+                    </div>
                 </div>
                 <div class="review alternate">
                     <div class="reviewer-info">
@@ -91,6 +95,9 @@
                     </div>
                     <p class="comment">"Nunca provei bolos tão deliciosos quanto os dessa loja. Eles sempre chegam
                         fresquinhos e com uma apresentação impecável. Parabéns pelo trabalho!"</p>
+                    <div class="rating">
+                        <div class="stars" data-rating="5"></div>
+                    </div>
                 </div>
                 <div class="review">
                     <div class="reviewer-info">
@@ -102,10 +109,49 @@
                     </div>
                     <p class="comment">"Estou completamente apaixonada pelos bolos da Maria. Eles são feitos com tanto
                         carinho e dedicação, sempre fresquinhos e deliciosos!"</p>
+                    <div class="rating">
+                        <div class="stars" data-rating="5"></div>
+                    </div>
+                </div>
+                <div class="review alternate">
+                    <div class="reviewer-info">
+                        <img src="assets/pedro.png" alt="Avatar" class="avatar">
+                        <div class="info">
+                            <h3>Pedro Almeida</h3>
+                            <p>Cliente desde 2018</p>
+                        </div>
+                    </div>
+                    <p class="comment">"Sou fã dos bolos da Dona Maria há anos. Cada sabor é uma experiência incrível. A
+                        qualidade e o sabor são sempre consistentes. Parabéns à equipe!"</p>
+                    <div class="rating">
+                        <div class="stars" data-rating="5"></div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="reviewer-info">
+                        <img src="assets/ana.png" alt="Avatar" class="avatar">
+                        <div class="info">
+                            <h3>Ana Oliveira</h3>
+                            <p>Cliente desde 2020</p>
+                        </div>
+                    </div>
+                    <p class="comment">"Nunca me decepcionei com os bolos da Dona Maria. Sempre deliciosos, fresquinhos
+                        e com um atendimento impecável. Continuarei sendo cliente fiel!"</p>
+                    <div class="rating">
+                        <div class="stars" data-rating="5"></div>
+                    </div>
                 </div>
             </div>
         </div>
-
+        <div class="button-prev-next">
+            <button class="prev" onclick="changeReview(-1)">Anterior</button>
+            <button class="next" onclick="changeReview(1)">Próximo</button>
+        </div>
+        </div>
+        </div>
+        <br id="produtos">
+        <br>
+        <br>
         <div id="bolo" class="bolo">
             <h5 class="name-bolos">Bolos </h5>
             <div class="bolo1">
@@ -196,12 +242,12 @@
                 </div>
             </div>
         </div>
+        <br id="contato">
         </div>
         <div>
-
             <div class="fale">
                 <div class="fale-conosco">
-                    <h2>Fale Conosco</h2>
+                    <h2>Converse Conosco, estamos aqui para adoçar seu dia!</h2>
                     <form action="enviar.php" method="POST">
                         <div class="form-group">
                             <label for="nome">Nome:</label>
@@ -224,18 +270,10 @@
                     <img src="assets/instagram_logo.png" alt="instagram">
                     <img src="assets/linkend_logo.png" alt="linkend">
                 </div>
-
             </div>
-
-
-
-
-
-
-
+            <h3 class="direitos">Direitos reservados | Maria Bolos | Filipe Lopes © 2024</h3>
     </main>
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
 
