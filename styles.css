@@ -873,9 +873,9 @@ textarea {
     .bolo7,
     .bolo8,
     .bolo9 {
-        width: calc(53% - 29px);
-        height: 310px;
-        margin: 5px;
+        width: calc(50% - 24px);
+        height: 318px;
+        margin: 7px;
         background-color: #ebcca2;
         border-radius: 11px;
         padding: 10px;
@@ -957,16 +957,17 @@ textarea {
 
     .redes-sociais {
         text-align: center;
-        margin-top: 95px;
+        margin-top: 98px;
     }
 
     .direitos {
         text-align: center;
         color: #56091F;
         font-size: 13px;
-        padding-top: 50px;
+
         padding-bottom: 25px;
         font-weight: 500;
+        padding-top: 15px;
 
     }
 
