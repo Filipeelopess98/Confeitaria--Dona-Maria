@@ -424,7 +424,6 @@ body {
 
 
 
-
 .sabor {
     font-size: 17px;
     margin-top: 10px;
@@ -564,17 +563,104 @@ textarea {
 }
 
 
+
+
+
+
+.formas-pagamento {
+    margin-top: 20px;
+    background-color: #56091F;
+    color: #ebcca2;
+    text-align: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 356px;
+}
+
+.master,
+.visa,
+.pix,
+.dinheiro {
+    display: block;
+    margin-bottom: 5px;
+    width: 40px;
+    margin-left: 11px;
+    text-align: end;
+}
+
+.elo {
+    width: 35px;
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 11px;
+    text-align: end;
+}
+
+.pix,
+.dinheiro {
+    width: 30px;
+}
+
+.text-pagamento {
+    font-size: 22px;
+    text-align: center;
+}
+
+.imagem {
+    display: flex;
+    justify-content: last baseline;
+    padding-top: 20px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+
+}
+
+.payment-option img {
+    margin-right: 50px;
+}
+
+.payment-option p {
+    margin: 0;
+    font-size: 13px;
+}
+
+
+.horario {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.horario p {
+    font-size: 14px;
+}
+
+
+.horario span {
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+
+
+
 .redes-sociais {
     text-align: center;
     margin-top: 90px;
 }
 
-
 .redes-sociais img {
     width: 45px;
     margin: 0 10px;
+    padding-bottom: 25px;
 }
-
 
 .redes-sociais h1 {
     color: #56091F;
@@ -587,10 +673,11 @@ textarea {
     text-align: center;
     color: #56091F;
     font-size: 15px;
-    padding-top: 35px;
+    padding-top: 500px;
+    padding-bottom: 26px;
     font-weight: 500;
-
 }
+
 
 
 
@@ -989,6 +1076,7 @@ textarea {
     }
 
 
+
     .fale-conosco {
         max-width: 594px;
         margin: 1px auto;
@@ -1009,19 +1097,94 @@ textarea {
 
     }
 
+    .formas-pagamento {
+        margin-top: 15px;
+        background-color: #56091F;
+        color: #ebcca2;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+
+    }
+
+    .master,
+    .visa,
+    .pix,
+    .dinheiro {
+        width: 40px;
+        margin-bottom: 5px;
+    }
+
+    .elo {
+        width: 35px;
+    }
+
+    .text-pagamento {
+        font-size: 22px;
+    }
+
+    .imagem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    .payment-option {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    .payment-option img {
+        margin-right: 25px;
+
+    }
+
+    .payment-option p {
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .horario {
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 30px;
+
+    }
+
+    .horario p {
+        font-size: 14px;
+    }
+
+    .horario span {
+        font-weight: 600;
+        margin-left: 10px;
+    }
+
+
     .redes-sociais {
         text-align: center;
-        margin-top: 98px;
+        margin-top: 20px;
+        text-align: 17px;
+    }
+
+
+    .redes-sociais img {
+        padding-top: 10px;
     }
 
     .direitos {
         text-align: center;
         color: #56091F;
-        font-size: 13px;
-
-        padding-bottom: 25px;
+        font-size: 14px;
         font-weight: 500;
-        padding-top: 15px;
+        padding-top: 560px;
 
     }
 

@@ -29,7 +29,7 @@ function showNextReview() {
 }
 
 
-setInterval(showNextReview, 1500);
+setInterval(showNextReview, 2000);
 
 
 $(document).ready(function () {
