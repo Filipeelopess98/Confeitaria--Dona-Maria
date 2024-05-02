@@ -229,6 +229,20 @@ body {
 }
 
 
+
+.customer-reviews .review {
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+.customer-reviews .review.active {
+    display: block;
+    opacity: 1;
+}
+
+
+
+
 .customer-reviews {
     background-color: #56091F;
     padding: 20px;
@@ -265,8 +279,17 @@ body {
     margin-right: 15px;
 }
 
+
+.verified {
+
+    vertical-align: middle;
+    width: 22px;
+}
+
+
 .info h3 {
     margin: 0;
+    font-weight: 400;
 }
 
 .info p {
@@ -335,26 +358,6 @@ body {
 
 
 
-.prev,
-.next {
-    background-color: #56091F;
-    color: #ebcca2;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.prev:hover,
-.next:hover {
-
-    font-weight: 800;
-}
-
-
-
-
 .name-bolos {
     color: #ebcca2;
     text-align: center;
@@ -368,8 +371,8 @@ body {
 
     width: 100%;
     overflow: hidden;
-    padding-left: 23px;
-    padding-right: 23px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-top: -7px;
     text-align: center;
     background-color: #56091F;
@@ -385,10 +388,13 @@ body {
 .bolo6,
 .bolo7,
 .bolo8,
-.bolo9 {
+.bolo9,
+.bolo10,
+.bolo11,
+.bolo12 {
     display: inline-block;
-    width: 230px;
-    height: 385px;
+    width: 210px;
+    height: 440px;
     margin: 10px;
     color: #56091F;
     background-color: #ebcca2;
@@ -397,7 +403,27 @@ body {
     text-align: center;
     overflow: hidden;
     box-shadow: 2px 3px 3px 2px #0e0e0e;
+    transition: transform 0.5s;
 }
+
+.bolo1:hover,
+.bolo2:hover,
+.bolo3:hover,
+.bolo4:hover,
+.bolo5:hover,
+.bolo6:hover,
+.bolo7:hover,
+.bolo8:hover,
+.bolo9:hover,
+.bolo10:hover,
+.bolo11:hover,
+.bolo12:hover {
+
+    transform: scale(1.05);
+}
+
+
+
 
 .sabor {
     font-size: 17px;
@@ -406,7 +432,7 @@ body {
 
 
 .img-bolo {
-    width: 230px;
+    width: 210px;
     border-radius: 50%;
     padding-left: 15px;
     padding-right: 15px;
@@ -458,6 +484,22 @@ body {
     padding-right: 10px;
     padding-left: 10px;
 }
+
+.avaliacao .star {
+    color: #f39c12;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.numbers {
+    font-size: 13px;
+    color: #56091F;
+    font-weight: 500;
+
+
+}
+
+
 
 
 .fale {
@@ -837,9 +879,18 @@ textarea {
         margin-right: 15px;
     }
 
+    .verified {
+        font-size: 16px;
+        vertical-align: middle;
+        font-weight: 500;
+    }
+
+
+
     .info h3 {
         margin: 0;
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: 400;
     }
 
     .info p {
@@ -872,9 +923,12 @@ textarea {
     .bolo6,
     .bolo7,
     .bolo8,
-    .bolo9 {
+    .bolo9,
+    .bolo10,
+    .bolo11,
+    .bolo12 {
         width: calc(50% - 24px);
-        height: 330px;
+        height: 395px;
         margin: 7px;
         background-color: #ebcca2;
         border-radius: 11px;

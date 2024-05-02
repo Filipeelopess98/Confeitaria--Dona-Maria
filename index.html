@@ -76,7 +76,8 @@
                         <img src="assets/joana.png" alt="Avatar" class="avatar">
                         <div class="info">
                             <h3>Joana Silva</h3>
-                            <p>Cliente desde 2022</p>
+                            <p><span class="verified">Compra Verificada <img src="assets/verificado.png"
+                                        alt="Verificado" class="verified"> </span></p>
                         </div>
                     </div>
                     <p class="comment">"Os bolos desta loja são simplesmente incríveis! Eu pedi para o meu aniversário e
@@ -90,7 +91,8 @@
                         <img src="assets/marcos.png" alt="Avatar" class="avatar">
                         <div class="info">
                             <h3>Marcos Oliveira</h3>
-                            <p>Cliente desde 2021</p>
+                            <p><span class="verified">Compra Verificada <img src="assets/verificado.png"
+                                        alt="Verificado" class="verified"> </span></p>
                         </div>
                     </div>
                     <p class="comment">"Nunca provei bolos tão deliciosos quanto os dessa loja. Eles sempre chegam
@@ -103,8 +105,9 @@
                     <div class="reviewer-info">
                         <img src="assets/lucia.png" alt="Avatar" class="avatar">
                         <div class="info">
-                            <h3>Lúcia Santos</h3>
-                            <p>Cliente desde 2020</p>
+                            <h3>Lucia Santos</h3>
+                            <p><span class="verified">Compra Verificada <img src="assets/verificado.png"
+                                        alt="Verificado" class="verified"> </span></p>
                         </div>
                     </div>
                     <p class="comment">"Estou completamente apaixonada pelos bolos da Maria. Eles são feitos com tanto
@@ -118,7 +121,8 @@
                         <img src="assets/pedro.png" alt="Avatar" class="avatar">
                         <div class="info">
                             <h3>Pedro Almeida</h3>
-                            <p>Cliente desde 2018</p>
+                            <p><span class="verified">Compra Verificada <img src="assets/verificado.png"
+                                        alt="Verificado" class="verified"> </span></p>
                         </div>
                     </div>
                     <p class="comment">"Sou fã dos bolos da Dona Maria há anos. Cada sabor é uma experiência incrível. A
@@ -132,7 +136,8 @@
                         <img src="assets/ana.png" alt="Avatar" class="avatar">
                         <div class="info">
                             <h3>Ana Oliveira</h3>
-                            <p>Cliente desde 2020</p>
+                            <p><span class="verified">Compra Verificada <img src="assets/verificado.png"
+                                        alt="Verificado" class="verified"> </span></p>
                         </div>
                     </div>
                     <p class="comment">"Nunca me decepcionei com os bolos da Dona Maria. Sempre deliciosos, fresquinhos
@@ -143,12 +148,9 @@
                 </div>
             </div>
         </div>
-        <div class="button-prev-next">
-            <button class="prev" onclick="changeReview(-1)">Anterior</button>
-            <button class="next" onclick="changeReview(1)">Próximo</button>
         </div>
         </div>
-        </div>
+
         <br id="produtos">
         <br>
         <br>
@@ -157,8 +159,17 @@
             <div class="bolo1">
                 <h5 class="sabor">Limão</h5>
                 <img class="img-bolo" src="assets/bolo limão.png" bolo-limao">
+                <div class="avaliacao">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+
+                </div>
+                <span class="numbers">98 Avaliações</span>
                 <div class="descricao">
-                    <h3>R$ 49,90</h3>
+                    <h3>R$ 52,90</h3>
                     <p>Massa leve com cobertura feita do suco
                         da fruta, finalizado com raspas da mesma.</p>
                 </div>
@@ -167,81 +178,224 @@
             <div class="bolo2">
                 <h5 class="sabor">Cenoura</h5>
                 <img class="img-bolo" src="assets/bolo-de-cenoura.jpg" bolo-limao">
+                <div class="avaliacao">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+
+                </div>
+                <span class="numbers">89 Avaliações</span>
                 <div class="descricao">
                     <h3>R$ 59,90</h3>
                     <p>Com cobertura incrível feita com chocolate 40%.</p>
-
                 </div>
+
             </div>
 
             <div class="bolo3">
                 <h5 class="sabor">Brigadeiro</h5>
                 <img class="img-bolo" src="assets/bolo brigadeiro.png">
+                <div class="avaliacao">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <span class="numbers">73 Avaliações</span>
                 <div class="descricao">
                     <h3>R$ 69,90</h3>
                     <p> Com cobertura de brigadeiro é uma verdadeira explosão de
                         sabor.</p>
-
                 </div>
+
 
             </div>
             <div class="bolo4">
                 <h5 class="sabor">Fubá c/ Goiabada</h5>
                 <img class="img-bolo" src="assets/bolo-de-fuba-com-goiabada.jpg" bolo-limao">
+                <div class="avaliacao">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+
+                </div>
+                <span class="numbers">46 Avaliações</span>
                 <div class="descricao">
                     <h3>R$ 49,90</h3>
                     <p>Com goiabada, é uma festa para o paladar. Um
                         encanto brasileiro.</p>
-
                 </div>
+
 
             </div>
             <div class="bolo5">
                 <h5 class="sabor">Formigueiro</h5>
                 <img class="img-bolo" src="assets/bolo_formigueiro.jpg" bolo-limao">
+                <div class="avaliacao">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <span class="numbers">30 Avaliações</span>
                 <div class="descricao">
                     <h3>R$ 32,90</h3>
                     <p>Com pedaços de chocolate criando uma experiência
                         para qualquer momento</p>
                 </div>
+
             </div>
             <div class="bolo6">
-                <h5 class="sabor">Pão de ló</h5>
-                <img class="img-bolo" src="assets/Pão-de-Ló-Caseiro.jpg">
-                <div class="descricao">
-                    <h3>R$ 29,90</h3>
-                    <p>Derrete na boca, perfeito para qualquer momento.</p>
+                <h5 class="sabor">Paçoca</h5>
+                <img class="img-bolo" src="assets/bolo-de-paçoca.jpg">
+                <div class="avaliacao">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
                 </div>
+                <span class="numbers">72 Avaliações</span>
+                <div class="descricao">
+                    <h3>R$ 59,90</h3>
+                    <p>Coberto com uma farofa paçoca para uma explosão de sabor em cada pedaço.</p>
+                </div>
+
             </div>
             <div class="bolo7">
                 <h5 class="sabor">Fubá</h5>
                 <img class="img-bolo" src="assets/bolo-de-fubá.jpg">
+                <div class="avaliacao">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <span class="numbers">64 Avaliações</span>
                 <div class="descricao">
                     <h3>R$ 29,90</h3>
                     <p>Ideal para café ou momentos especiais. Uma experiência que
                         resgata tradições.</p>
                 </div>
+
             </div>
             <div class="bolo8">
                 <h5 class="sabor">Banana</h5>
                 <img class="img-bolo" src="assets/bolo-de-banana.jpg">
+                <div class="avaliacao">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <span class="numbers">40 Avaliações</span>
                 <div class="descricao">
-                    <h3>R$ 34,90</h3>
+                    <h3>R$ 35,90</h3>
                     <p>Perfeito para um café ou momentos especiais, resgatando
                         memórias.</p>
-
                 </div>
+
             </div>
             <div class="bolo9">
                 <h5 class="sabor">Laranja</h5>
                 <img class="img-bolo" src="assets/bolo-de-laranja.jpg">
+                <div class="avaliacao">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <span class="numbers">38 Avaliações</span>
                 <div class="descricao">
                     <h3>R$ 32,90</h3>
                     <p>Com sabor da fruta perfeito para qualquer ocasição.</p>
+                </div>
+
+            </div>
+            <div class="bolo9">
+                <h5 class="sabor">Cocada</h5>
+                <img class="img-bolo" src="assets/Bolo-Cocada.jpg">
+                <div class="avaliacao">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
 
                 </div>
+                <span class="numbers">55 Avaliações</span>
+                <div class="descricao">
+                    <h3>R$ 49,90</h3>
+                    <p>Autêntico e delicioso, coberto com flocos de coco tostados para
+                        uma explosão de sabor em cada pedaço.</p>
+                </div>
+
+            </div>
+            <div class="bolo10">
+                <h5 class="sabor">Mandioca</h5>
+                <img class="img-bolo" src="assets/Bolo-de-mandioca.jpg">
+                <div class="avaliacao">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <span class="numbers">47 Avaliações</span>
+                <div class="descricao">
+                    <h3>R$ 42,90</h3>
+                    <p>Massa que derrete na boca. Venha saborear a autenticidade
+                        desse ingrediente brasileiro.</p>
+                </div>
+
+            </div>
+            <div class="bolo11">
+                <h5 class="sabor">Maracujá</h5>
+                <img class="img-bolo" src="assets/Bolo-de-Maracujá.jpg">
+                <div class="avaliacao">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <span class="numbers">33 Avaliações</span>
+                <div class="descricao">
+                    <h3>R$ 44,90</h3>
+                    <p>Com a doçura da fruta em cada pedaço e regado com uma calda
+                        que é uma explosão de sabor.</p>
+                </div>
+
+            </div>
+            <div class="bolo12">
+                <h5 class="sabor">Milho Cremoso</h5>
+                <img class="img-bolo" src="assets/bolo-de-milho.jpg">
+                <div class="avaliacao">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+
+                </div><span class="numbers">43 Avaliações</span>
+                <div class="descricao">
+                    <h3>R$ 41,90</h3>
+                    <p>Deliciosamente cremoso, cada mordida derrete na boca, revelando o
+                        sabor autêntico do milho.</p>
+                </div>
+
             </div>
         </div>
+
         <br id="contato">
         </div>
         <div>

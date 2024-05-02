@@ -17,31 +17,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const reviews = document.querySelectorAll('.review');
-    let currentReviewIndex = 0;
+let currentReviewIndex = 0;
+const reviews = document.querySelectorAll('.customer-reviews .review');
+const totalReviews = reviews.length;
 
-    function showReview(index) {
-        reviews.forEach(review => {
-            review.style.display = 'none';
-        });
-        reviews[index].style.display = 'block';
-    }
 
-    function changeReview(direction) {
-        currentReviewIndex += direction;
-        if (currentReviewIndex < 0) {
-            currentReviewIndex = reviews.length - 1;
-        } else if (currentReviewIndex >= reviews.length) {
-            currentReviewIndex = 0;
-        }
-        showReview(currentReviewIndex);
-    }
+function showNextReview() {
+    reviews[currentReviewIndex].classList.remove('active');
+    currentReviewIndex = (currentReviewIndex + 1) % totalReviews;
+    reviews[currentReviewIndex].classList.add('active');
+}
 
-    showReview(currentReviewIndex);
 
-    window.changeReview = changeReview;
-});
+setInterval(showNextReview, 1500);
+
 
 $(document).ready(function () {
 
